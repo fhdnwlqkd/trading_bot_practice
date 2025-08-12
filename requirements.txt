@@ -3,3 +3,5 @@ numpy
 jupyter
 ccxt
 pytz
+psycopg2-binary 
+python-dateutil
