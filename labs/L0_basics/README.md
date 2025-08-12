@@ -13,3 +13,17 @@
 - ohlcv_5m.head() 출력 확인
 - 결측 처리 원문 1문장 요약
 - OHLCV 정의/주문 유형 정리문
+
+## 결론
+fetch_xrp_1m.py
+- upbit api를 통해서 1분봉 단위로 OHLCV를 받아와서 csv로 저장함.
+
+resample_5m.py
+- 1분봉 단위로 되어있는 데이터는 노이즈가 많이 때문에 5분봉 단위로 resampling함.
+- 전략/모델의 실행 주기 통일
+
+make_features.py
+- 1분봉이나 5분봉 데이터를 가지고 model에 넣기전에 feature를 생성함.
+- 정상성을 확보하기 위해서 수익률을 생성함.
+- 만든 피처: ret_1/ret_5/ret_15(모멘텀), ma_20(국소 추세), std_20(국소 변동성)
+
