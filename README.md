@@ -1,2 +1,4 @@
-# trading_bot_practice
-trading bot을 만들기 위한 연습 과정.
+# TideFlow-XRP
+시계열 트레이딩 봇을 L0~L4 단계로 확장하며, 데이터→모델링→MLOps→서빙까지 학습/구현합니다.
+- labs/: 레벨별 실습과 학습 산출물
+- app/: 실제 서비스 통합(점진 개발)
