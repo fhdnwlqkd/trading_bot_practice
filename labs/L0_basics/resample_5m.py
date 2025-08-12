@@ -8,4 +8,4 @@ ohlcv_5m = df.resample('5T').agg({
 assert (ohlcv_5m['high'] >= ohlcv_5m[['open','close','low']].max(axis=1)).all()
 assert (ohlcv_5m['low']  <= ohlcv_5m[['open','close','high']].min(axis=1)).all()
 print(ohlcv_5m.head(10))
-ohlcv_5m.to_csv('results/xrp_1m.csv'); print('saved xrp_1m.csv')
+ohlcv_5m.to_csv('results/xrp_5m.csv'); print('saved xrp_5m.csv')
