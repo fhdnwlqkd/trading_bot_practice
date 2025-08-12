@@ -1,2 +1,3 @@
 .venv/
-/labs/L0_basics/results/
+labs/L0_basics/results/
+labs/L1_timeseries_db/pgdata/

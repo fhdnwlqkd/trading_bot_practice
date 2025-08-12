@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  timescaledb:
+    image: timescale/timescaledb:latest-pg16
+    container_name: tideflow-timescale
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pgpass
+      POSTGRES_DB: market
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d market"]
+      interval: 5s
+      timeout: 3s
+      retries: 10

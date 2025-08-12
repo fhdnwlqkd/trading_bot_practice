@@ -6,7 +6,7 @@ import pandas as pd, numpy as np
 # open: 첫 거래 가격, high: 최고가, low: 최저가, close: 마지막 거래 가격, volume: 거래량
 # 결과는 'results/xrp_1m_features.csv'에 저장됩니다.
 # 기존의 1분 봉 데이터를 기반으로 모멘텀, 추세, 변동성 등의 특성을 생성합니다.
-# 기존의 데이터를 정상성을 갖춘 시계열로 변환하고, 다양한 지표를 추가합니다.
+# 기존의 데이터를 정상성에 가까운 시계열로 변환하고, 다양한 지표를 추가합니다.
 
 # 1) 로드 & 시간 정렬(1분 격자 권장)
 df = pd.read_csv('results/xrp_1m.csv', parse_dates=['timestamp']).set_index('timestamp').sort_index()
