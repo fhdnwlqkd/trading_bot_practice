@@ -8,12 +8,12 @@ services:
       POSTGRES_PASSWORD: pgpass
       POSTGRES_DB: market
     ports:
-      - "5432:5432"
+      - "5432:5432"            # 먼저 고정 포트로 단순화
     volumes:
       - ./pgdata:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d market"]
+      test: ["CMD-SHELL", "pg_isready -h localhost -p 5432 -U postgres -d market || exit 1"]
       interval: 5s
       timeout: 3s
       retries: 10

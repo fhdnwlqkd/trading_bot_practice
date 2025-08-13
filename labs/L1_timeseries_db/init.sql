@@ -1,24 +1,20 @@
--- Timescale 확장 사용
 CREATE EXTENSION IF NOT EXISTS timescaledb;
 
--- 1분봉 OHLCV 테이블
 CREATE TABLE IF NOT EXISTS ohlcv_xrp_krw_1m(
   ts TIMESTAMPTZ PRIMARY KEY,
-  open  NUMERIC,
-  high  NUMERIC,
-  low   NUMERIC,
-  close NUMERIC,
-  volume NUMERIC,
+  open  DOUBLE PRECISION,
+  high  DOUBLE PRECISION,
+  low   DOUBLE PRECISION,
+  close DOUBLE PRECISION,
+  volume DOUBLE PRECISION,
   trade_count BIGINT
 );
 
--- 하이퍼테이블화
 SELECT create_hypertable('ohlcv_xrp_krw_1m','ts', if_not_exists => TRUE);
 
--- 조회 최적화 인덱스
 CREATE INDEX IF NOT EXISTS idx_ohlcv_xrp_1m_ts_desc ON ohlcv_xrp_krw_1m (ts DESC);
 
--- (선택) 5분봉 연속 집계(Continuous Aggregate)
+-- (선택) 5분 연속 집계 (Continuous Aggregate)
 CREATE MATERIALIZED VIEW IF NOT EXISTS cagg_ohlcv_xrp_krw_5m
 WITH (timescaledb.continuous) AS
 SELECT
@@ -33,7 +29,7 @@ FROM ohlcv_xrp_krw_1m
 GROUP BY bucket
 WITH NO DATA;
 
--- (선택) 자동 새로고침 정책: 최근 2일 범위
+-- (선택) 자동 새로고침 정책: 최근 2일
 SELECT add_continuous_aggregate_policy(
   'cagg_ohlcv_xrp_krw_5m',
   start_offset => INTERVAL '2 days',
