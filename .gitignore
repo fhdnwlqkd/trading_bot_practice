@@ -1,3 +1,6 @@
 .venv/
 labs/L0_basics/results/
 labs/L1_timeseries_db/pgdata/
+labs/L1_timeseries_db/.env.db
+labs/L1_timeseries_db/ingest.log
+labs/L1_timeseries_db/results/
