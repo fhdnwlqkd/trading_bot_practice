@@ -1,0 +1,82 @@
+2025-08-16 11:26:16,133 INFO start ingest: symbol=XRP/KRW tf=1m days=30 minutes=43200
+2025-08-16 11:27:08,123 INFO quality: missing_rows=19, duplicates=0, rows=43200, span=2025-07-17 02:27:00+00:00→2025-08-16 02:26:00+00:00
+2025-08-16 11:27:08,299 INFO saved CSV -> labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 11:27:08,299 INFO done.
+2025-08-16 11:29:24,013 INFO start ingest: symbol=XRP/KRW tf=1m days=30 minutes=43200
+2025-08-16 11:30:15,818 INFO quality: missing_rows=19, duplicates=0, rows=43200, span=2025-07-17 02:30:00+00:00→2025-08-16 02:29:00+00:00
+2025-08-16 11:30:15,993 INFO saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 11:30:15,993 INFO done.
+2025-08-16 11:38:35,162 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=30 minutes=43200
+2025-08-16 11:40:22,827 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=3 minutes=4320
+2025-08-16 11:40:39,988 INFO start ingest: src=ccxt symbol=XRP/KRW tf=1m days=3 minutes=4320
+2025-08-16 11:40:45,382 INFO quality: missing_rows=0, rows=4320, span=2025-08-13 02:41:00+00:00→2025-08-16 02:40:00+00:00
+2025-08-16 11:40:45,415 INFO saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 11:40:45,415 INFO done.
+2025-08-16 11:40:51,216 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=1 minutes=1440
+2025-08-16 11:41:55,343 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=1 minutes=1440
+2025-08-16 11:41:56,956 INFO quality: missing_rows=0, rows=1440, span=2025-08-15 23:22:00+00:00→2025-08-16 02:41:00+00:00
+2025-08-16 11:41:56,972 INFO saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 11:41:56,972 INFO done.
+2025-08-16 11:42:24,146 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=10 minutes=14400
+2025-08-16 11:42:38,532 INFO quality: missing_rows=0, rows=14400, span=2025-08-15 23:23:00+00:00→2025-08-16 02:42:00+00:00
+2025-08-16 11:42:38,609 INFO saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 11:42:38,609 INFO done.
+2025-08-16 11:49:22,602 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=3 minutes=4320
+2025-08-16 11:49:44,702 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=3 minutes=4320
+2025-08-16 11:49:49,074 INFO [QC][candles] rows=4320  span=2025-08-15 23:30:00+00:00→2025-08-16 02:49:00+00:00  missing_rows=0
+2025-08-16 11:49:49,138 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A49%3A00; retry in 1s
+2025-08-16 11:49:50,208 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A49%3A00; retry in 1s
+2025-08-16 11:49:51,267 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A49%3A00; retry in 1s
+2025-08-16 11:49:52,345 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A49%3A00; retry in 1s
+2025-08-16 11:49:53,408 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A49%3A00; retry in 1s
+2025-08-16 11:49:54,486 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A49%3A00; retry in 1s
+2025-08-16 11:54:49,557 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=3 minutes=4320
+2025-08-16 11:54:53,991 INFO [QC][candles] rows=0  span=NaT→NaT  dup_idx=0  missing_rows=0
+2025-08-16 11:57:07,979 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=3 minutes=4320
+2025-08-16 11:57:12,734 INFO [QC][candles] rows=0  span=NaT→NaT  dup_idx=0  missing_rows=0
+2025-08-16 11:57:13,003 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A55%3A49; retry in 1s
+2025-08-16 11:57:14,065 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A55%3A49; retry in 1s
+2025-08-16 11:57:15,140 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A55%3A49; retry in 1s
+2025-08-16 11:57:16,205 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A55%3A49; retry in 1s
+2025-08-16 11:57:17,272 WARNING HTTP error (trades): 400 Client Error:  for url: https://api.upbit.com/v1/trades/ticks?market=KRW-XRP&count=200&to=2025-08-16+11%3A55%3A49; retry in 1s
+2025-08-16 13:04:32,687 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=3 minutes=4320
+2025-08-16 13:05:32,817 INFO start ingest: src=upbit-native symbol=XRP/KRW tf=1m days=3 minutes=4320
+2025-08-16 13:05:37,285 INFO [QC][candles] rows=0  span=NaT→NaT  dup_idx=0  missing_rows=0
+2025-08-16 13:09:52,237 INFO Start ingest: src=upbit-native, symbol=XRP/KRW, days=3
+2025-08-16 13:09:57,535 INFO [QC][candles] rows=200  span=2025-08-16 00:50:00+00:00→2025-08-16 04:09:00+00:00  dup_idx=0  missing_rows=0
+2025-08-16 13:11:09,134 INFO Start ingest: src=upbit-native, symbol=XRP/KRW, days=1
+2025-08-16 13:11:11,030 INFO [QC][candles] rows=200  span=2025-08-16 00:52:00+00:00→2025-08-16 04:11:00+00:00  dup_idx=0  missing_rows=0
+2025-08-16 13:16:22,284 INFO Start ingest: src=upbit-native, symbol=XRP/KRW, days=1
+2025-08-16 13:16:24,259 INFO [QC][candles] rows=200  span=2025-08-16 00:57:00+00:00→2025-08-16 04:16:00+00:00  dup_idx=0  missing_rows=0
+2025-08-16 13:17:10,544 INFO Start ingest: src=upbit-native, symbol=XRP/KRW, days=1
+2025-08-16 13:17:12,533 INFO [QC][candles] rows=200  span=2025-08-16 00:58:00+00:00→2025-08-16 04:17:00+00:00  dup_idx=0  missing_rows=0
+2025-08-16 13:17:52,612 INFO Start ingest: src=upbit-native, symbol=XRP/KRW, days=30
+2025-08-16 13:18:43,444 INFO [QC][candles] rows=201  span=2025-08-16 00:58:00+00:00→2025-08-16 04:18:00+00:00  dup_idx=0  missing_rows=0
+2025-08-16 13:18:43,447 INFO Saved CSV -> data/raw/xrp_1m_30d.csv
+2025-08-16 13:18:43,447 INFO Done.
+2025-08-16 13:20:46,184 INFO Start ingest: src=ccxt, symbol=XRP/KRW, days=30
+2025-08-16 13:21:37,205 INFO [QC][candles] rows=43200  span=2025-07-17 04:21:00+00:00→2025-08-16 04:20:00+00:00  dup_idx=0  missing_rows=19
+2025-08-16 13:21:37,408 INFO Saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 13:21:37,408 INFO Done.
+2025-08-16 13:27:14,227 INFO Start ingest: src=ccxt, symbol=XRP/KRW, tf=1m, days=30, minutes=43200
+2025-08-16 13:28:06,342 INFO [QC][ccxt] rows=43200  span=2025-07-17 04:28:00+00:00→2025-08-16 04:27:00+00:00  dup_idx=0  missing_rows=19
+2025-08-16 13:28:06,518 INFO Saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 13:28:06,518 INFO Done.
+2025-08-16 13:57:04,691 INFO Start ingest: src=ccxt, symbol=XRP/KRW, tf=1m, days=30, minutes=43200
+2025-08-16 13:57:56,737 INFO [QC][ccxt] rows=43200  span=2025-07-17 04:58:00+00:00→2025-08-16 04:57:00+00:00  dup_idx=0  missing_rows=19
+2025-08-16 13:57:56,909 INFO Saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 13:57:56,909 INFO Done.
+2025-08-16 13:58:29,744 INFO Start ingest: src=ccxt, symbol=XRP/KRW, tf=1m, days=3, minutes=4320
+2025-08-16 13:58:35,168 INFO [QC][ccxt] rows=4320  span=2025-08-13 04:59:00+00:00→2025-08-16 04:58:00+00:00  dup_idx=0  missing_rows=0
+2025-08-16 13:58:35,169 INFO [backfill] no missing segments; stop (pass #1)
+2025-08-16 13:58:35,170 INFO [QC][ccxt+backfilled] rows=4320  span=2025-08-13 04:59:00+00:00→2025-08-16 04:58:00+00:00  dup_idx=0  missing_rows=0
+2025-08-16 13:58:35,203 INFO Saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 13:58:35,203 INFO Done.
+2025-08-16 13:58:43,870 INFO Start ingest: src=ccxt, symbol=XRP/KRW, tf=1m, days=30, minutes=43200
+2025-08-16 13:59:35,947 INFO [QC][ccxt] rows=43201  span=2025-07-17 04:59:00+00:00→2025-08-16 04:59:00+00:00  dup_idx=0  missing_rows=19
+2025-08-16 13:59:35,950 INFO [backfill] pass #1 segments=1
+2025-08-16 13:59:36,139 INFO [backfill] pass #1 missing_rows 19 -> 19
+2025-08-16 13:59:36,139 INFO [backfill] no improvement; stop
+2025-08-16 13:59:36,140 INFO [QC][ccxt+backfilled] rows=43201  span=2025-07-17 04:59:00+00:00→2025-08-16 04:59:00+00:00  dup_idx=0  missing_rows=19
+2025-08-16 13:59:36,311 INFO Saved CSV -> /Users/m2nsteel/trading_bot_practice/labs/L2_modeling/data/raw/xrp_1m_30d.csv
+2025-08-16 13:59:36,311 INFO Done.
